@@ -10,15 +10,17 @@ body{
 }
 
 .navbar{
-    display:grid;
-    grid-template-columns: auto auto;
-    padding: 2rem;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display:flex;
+    padding-block: 1rem;
     justify-content:space-evenly;
     align-items: center;
-
-    
+    background-color: rgba(225, 207, 207, 0.229);
+    backdrop-filter: blur(10px);
+    z-index: 1;   
 }
-
 
 .nav-logo{
     display: flex;
@@ -26,9 +28,6 @@ body{
     cursor: pointer;
     column-gap: 20px;
     align-items: center;
-   
-    
-    
 
 }
 .nav-logo img{
@@ -37,7 +36,6 @@ body{
     border-radius: 10rem;
 
 }
-
 
 .Rgt-navbar{
     display: flex;
@@ -56,6 +54,7 @@ body{
 
 .Rgt-navbar a:hover{
     color:rgb(37, 133, 133);
+    text-decoration:overline;
     transition: 1s;
 
 }
@@ -69,7 +68,7 @@ body{
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 8rem;
 
 }
 
@@ -81,51 +80,278 @@ body{
     box-shadow:0px 0px 20px 0px white;
 }
 
-.my-links{
+.my-buttons{
     display: flex;
     gap: 4rem;
-    margin-block: 2rem;
-    justify-content: space-evenly;
-    
+    text-align: center;
+    margin-top: 2rem;
+
 }
-
-.my-links a:hover{
-    transform: scale(2);
-}
-
-
-
-.my-links a{
-    background-color: blueviolet;
-    width: 10rem;
+.my-buttons a{
     text-decoration: none;
     color: white;
-    padding: 5px;
+    
+
+}
+
+.my-buttons img{
+    width: 35px;
+    height: 35px;
+}
+
+
+.contact{
+    
+    background-color:rgb(51, 47, 47);
+    padding: 10px;
+    width: 8rem;
     border-radius: 5rem;
+    text-align: center;
+    box-shadow:0px 0px 20px 0px rgb(109, 105, 105); 
+    border: 2px solid white;
+    
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
+        }
+    }
+}
+
+
+
+.resume{
+    background-color:rgb(51, 47, 47);
+    padding: 10px;
+    width: 8rem;
+    border-radius: 5rem;
+    text-align: center;
+    box-shadow:0px 0px 20px 0px rgb(109, 105, 105); 
+    border: 2px solid white;
+
+     a{
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        justify-content: center;
+        
+        img{
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+    }
+
+}
+
+
+
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 3rem ;
+    text-align: center;
+    justify-items: center;
+
+    h2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding-block: 2rem;
+    }
+
+    hr{
+        margin: auto;
+        width: 40rem;
+        filter: brightness(0.5);
+    }
+}
+
+
+
+#about-me{
+    display: flex;
+    padding-inline: 10rem;
+    padding-block: 5rem;
+}
+
+
+.about-img img{
+    width: 15rem;
+    height: 20rem;
+    border-radius: 5rem;
+    border:none;
+    }
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 80rem;
+    p{
+        margin-top: 2rem;
+        padding-inline: 5rem;
+    }
+}
+
+.liner{
+    width: 1px;
+    height: 100rem;
+    border: 2px solid white;
+}
+
+.Qualification{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 3rem ;
+    text-align: center;
+    justify-items: center;
+    h2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding-block: 2rem;
+    }
+
+    hr{
+        margin: auto;
+        width: 40rem;
+        filter: brightness(0.5);
+    }
+}
+
+
+
+.education{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:2rem;
+    margin-top: 2rem;
+}
+
+.edu{
+    width: 40vw;
+    height:20vh;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.Project{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 3rem ;
+    text-align: center;
+    justify-items: center;
+    h2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding-block: 2rem;
+    }
+
+    hr{
+        margin: auto;
+        width: 40rem;
+        filter: brightness(0.5);
+    }
+}
+
+
+.Certificaions{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 3rem ;
+    text-align: center;
+    justify-items: center;
+    h2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding-block: 2rem;
+    }
+
+    hr{
+        margin: auto;
+        width: 40rem;
+        filter: brightness(0.5);
+    }
+}
+
+
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 3rem ;
+    text-align: center;
+    justify-items: center;
+    h2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding-block: 2rem;
+    }
+
+    hr{
+        margin: auto;
+        width: 40rem;
+        filter: brightness(0.5);
+    }
+}
+
+
+
+.footer{
+ text-align: center;
+    hr{
+        width: 85rem;
+        margin: auto;
+        filter: brightness(0.8);
+    }
+
+    p{
+        filter: brightness(0.8);
+        padding:1rem;
+    }
+}
+
+
+@media screen and (max-width:600px){
+
+    .navbar{
+    display:grid;
+    grid-template-columns: auto;
+    margin: 0;
+    row-gap: 1rem;
+    line-height: 2.5rem;
+    justify-items: center;
+ 
+}
+
+    .my-info{
+        width: 20rem;
+        margin-top: 13rem;
+    }
+
+    .my-info>img{
+        width: 10rem;
+        height: 10rem;
+        
+    }
+
+    .Rgt-navbar{
+        justify-content: center;
+    }
+   
+    .my-buttons{
+        transform: scale(0.7);
+    }
     
 }
 
 
-
-.my-contact img{
-    width:2rem;
-    height: 2rem;  
-}
-
-.my-resume img{
-     width:1.5rem;
-    height: 1.5rem;
-}
-
-.my-resume a{
-    text-decoration: none;
-    color: white;
-}
-
-.my-contact a{
-    text-decoration: none;
-    color: white;
-}
 
 
 
