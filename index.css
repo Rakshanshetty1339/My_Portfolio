@@ -657,7 +657,7 @@ body{
 }
 
 
-@media screen and (max-width:480px){
+@media screen and (max-width:400px){
 
     .navbar{
     display:grid;
@@ -686,6 +686,7 @@ body{
    
     .my-buttons{
         transform: scale(1);
+        gap:2rem;
     }
 
     #about{
@@ -696,21 +697,23 @@ body{
 
 
     #about-me{
-    display:grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
     padding-inline:1rem;
+    justify-content: center;
+    align-items: center;
     }
 
     .about-img{
-    width: 100%;
-    
+    width: 15rem;   
 }
 
+
     .about-text{
-        width: 30rem;
+        width: 20rem;
 
         p{
-            padding-inline: 5rem;
+            padding-inline: 0rem;
         }
     }
 
@@ -801,22 +804,35 @@ body{
     }
 
     .contact-form{
-    width: 25rem;
+    width: 24rem;
     margin-inline: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    }
+
+    .form-info1{
+         display: flex;
+        flex-direction: column;
     }
 
     .form-info1 input{
-        width:10rem
+        width:20rem
     }
 
     .form-info2 input{
-        width:23.5rem
+        width:20rem
     }
 
     .form-info3 input{
-        width: 23.5rem;
+        width: 20rem;
         height: 10rem;
     } 
+
+    .form-btn {
+        text-align: center;
+    }
 
     
 }
