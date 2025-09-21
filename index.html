@@ -290,8 +290,18 @@
         <hr>
         <p>&#169 2025 Rakshan Shetty K. All copyrights reserved.</p>
     </div>
+
+
+    <script>
+  // If coming directly to index.html, redirect to loading.html first
+  if (!sessionStorage.getItem("visited")) {
+    sessionStorage.setItem("visited", "true");
+    window.location.href = "loading.html";
+  }
+</script>
+
         
-    
+    <script src="script.js"></script>
     
 </body>
 </html>

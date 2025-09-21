@@ -191,6 +191,7 @@ body{
 }
 
 
+
 .about-img img{
     width: 15rem;
     height: 20rem;
@@ -656,7 +657,7 @@ body{
 }
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:576px){
 
     .navbar{
     display:grid;
@@ -700,6 +701,11 @@ body{
     padding-inline:1rem;
     }
 
+    .about-img{
+    width: 100%;
+    
+}
+
     .about-text{
         width: 30rem;
 
@@ -725,6 +731,10 @@ body{
         flex-direction: column;
     }
 
+    .edu0{
+        display:none;
+    }
+
     .edu1{
         width: 20rem;
         height:15rem;
@@ -735,19 +745,12 @@ body{
         height:15rem;
     }
 
-    #projects{
-        }
-
     .edu3{
         width: 20rem;
         height:15rem;
     }
 
-    .edu0{
-        height: 0px;
-        margin: 0px;
-        width: 0px;
-    }
+  
 
     #Project{
         hr{
@@ -801,6 +804,19 @@ body{
     width: 25rem;
     margin-inline: 0px;
     }
+
+    .form-info1 input{
+        width:10rem
+    }
+
+    .form-info2 input{
+        width:23.5rem
+    }
+
+    .form-info3 input{
+        width: 23.5rem;
+        height: 10rem;
+    } 
 
     
 }
