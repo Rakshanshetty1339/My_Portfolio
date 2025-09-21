@@ -512,13 +512,14 @@ body{
 .contact-box{
     display: flex;
     text-align: start;
+    width: 20rem;
     margin-inline: 8rem;
     padding-block: 2rem;
     
 }
 
 .contact-info{
-    width: 25rem;
+    width: 20rem;
     p{filter: brightness(0.7);
     }
 
@@ -657,12 +658,13 @@ body{
 }
 
 
-@media screen and (max-width:400px){
+@media screen and (max-width:480px){
 
     .navbar{
     display:grid;
     grid-template-columns: auto;
     margin: 0;
+    width: 100%;
     row-gap: 1rem;
     line-height: 2.5rem;
     justify-items: center;
@@ -724,6 +726,9 @@ body{
     }
 
     #Qualification{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         hr{
             width: 20rem;
         }
@@ -804,7 +809,7 @@ body{
     }
 
     .contact-form{
-    width: 24rem;
+    width: 17rem;
     margin-inline: 0px;
     display: flex;
     align-items: center;
@@ -818,15 +823,15 @@ body{
     }
 
     .form-info1 input{
-        width:20rem
+        width:15rem
     }
 
     .form-info2 input{
-        width:20rem
+        width:15rem
     }
 
     .form-info3 input{
-        width: 20rem;
+        width: 15rem;
         height: 10rem;
     } 
 
